@@ -1,0 +1,114 @@
+@font-face {
+  font-family: wolf;
+  src: url(font.woff2);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg);
+  background-position: center;
+  width: 1680px;
+  height: 532px;
+  background-color: #6c757d;
+  color: white;
+  font-family: wolf;
+}
+
+.nav{
+  color: white;
+  height: 100%;
+}
+
+#topNav {
+  margin: 0 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%
+}
+
+#navMain > h1 {
+  font-size: 3rem;
+}
+
+#navMain > h5 {
+  font-size: 24px;
+}
+
+.header > h1 {
+  color: white;
+  
+}
+
+h6 {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 24px 16px;
+}
+
+
+.main{
+  margin: 0 180px;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: orange; */
+}
+.blog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 -24px;
+  padding: 0 25%;
+  
+}
+
+.blog > h2 {
+  font-size: 2.25rem;
+  margin: 30px 0 10px;
+  color: #212529;
+}
+
+.blog > h3 {
+  font-weight: 300;
+  margin-bottom: 0.625rem;
+  font-size: 1.75rem;
+}
+
+.blog > p {
+  font-size: 1.125rem;
+  font-style: italic;
+  margin: 0 0 32px;
+  /* border-bottom: 1px solid #6c757d; */
+  color: #6c757d;
+}
+
+.blog > p > a {
+  color: #212529;
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid grey;
+  padding: 48px 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer > h5 {
+  color: #6c757d;
+  font-size: 17.5px;
+}

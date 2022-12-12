@@ -1,0 +1,40 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin: 10vh 25vw;
+}
+
+.card {
+    background-color: whitesmoke;
+    margin: 10vh 10vw;
+    padding: 5%;
+}
+
+.Spring {
+    background-color:springgreen;
+
+}
+
+.Summer {
+    background-color: gold;
+}
+
+.Fall {
+    background-color: crimson;
+}
+
+.Winter {
+    background-color: deepskyblue;
+}
+
