@@ -15,6 +15,7 @@ body > img {
     right: 5%;
     top: 20%;
     z-index: 0;
+    border-radius: 50%;
 
     
 }
@@ -29,6 +30,8 @@ body > img {
     align-items: center;
     z-index: 10;
     position: relative;
+    border-radius: 5%;
+    border: 3px solid grey;
     
 }
 
@@ -38,7 +41,7 @@ body > img {
     font-size: 6em;
     /* color: white; */
     background-color: rgba(22, 73, 155, 0.628);
-    box-shadow: 5px 10px black;
+    box-shadow: 5px 5px grey;
     display: flex;
     justify-content: center;
     align-items: center;
