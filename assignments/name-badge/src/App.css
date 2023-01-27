@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+}
+
+
+form {
+  margin: 10vh 10vw;
+  padding: 3%;
+  border: solid 1px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+button {
+  grid-column: 1 / 3;
+  margin: 0 40%;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+textarea {
+  grid-column: 1 / 3;
+  overflow: hidden;
+  resize: none;
+  font-size: 1.5rem;
+  height: 8rem
+}
+
+.badge {
+  margin: 10vh 10vw;
+  border: solid 1px black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+
+}
+
+.badge--body{
+    padding: 2% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    overflow: hidden;
+}
+
+.badge--header{
+ padding-left: 10%;
+}
+
+.phone--field {
+  display: inline;
+}
+
+#phone--label{
+  float: left;
+  font-size: 1.5rem;
+  padding: 0 7%;
+}
+
+.badge--about {
+
+  grid-column: 1 / 3;
+  overflow: hidden;
+  resize: none;
+  font-size: 1.5rem;
+  height: 8rem;
+  border: 1px solid black
+}
+

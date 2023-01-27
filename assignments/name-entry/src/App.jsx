@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 
 
 export default function App() {
@@ -20,12 +21,12 @@ export default function App() {
   }
   
   
-  const listItem = list.map(item => <h1 key={item}>{item}</h1>)
+  const listItem = list.map(item => <li key={item}>{item}</li>)
 
   return (
     <div>
-      <h1
-      ></h1>
+      <h1 className='header'>Make A List!!!</h1>
+      
       <form onSubmit={handleSubmit}>
         <input 
           type='text'
@@ -36,12 +37,12 @@ export default function App() {
         />
         <button>Submit</button>
       </form>
-      <h1>-{formData}-</h1>
-      {listItem}
-
-      
-
-
+      <div className='display'>
+        <h1>-{formData}-</h1>
+      </div>
+      <ul className='list'>
+        {listItem}
+      </ul>
     </div>
   )
 }
