@@ -1,0 +1,23 @@
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  border: 5px solid black;
+  height: 80vh;
+  width: 80vw;
+}
+
+.header {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

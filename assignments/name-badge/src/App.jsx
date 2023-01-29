@@ -145,7 +145,7 @@ export default function App() {
           <label htmlFor='phone' id='phone--label'>* Numbers Only</label>
           <input
               id='phone'
-              type='tel'
+              type='tel'npm
               name='phoneNumber'
               value={formData.phoneNumber}
               placeholder='Phone Number'
