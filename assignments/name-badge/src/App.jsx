@@ -23,8 +23,6 @@ export default function App() {
   )
   
   useEffect(() => {
-
-    console.log(phone.value)
     return  formData.firstName.length &&
             formData.lastName.length &&
             formData.email.length &&

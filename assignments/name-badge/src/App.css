@@ -1,76 +1,133 @@
-* {
-  margin: 0;
-}
-
-
-form {
-  margin: 10vh 10vw;
-  padding: 3%;
-  border: solid 1px black;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  overflow: hidden;
-  border-radius: 10px;
+/* @media (min-width: 400) { */
+  * {
+    margin: 0;
+  }
   
-}
-
-input {
-  font-size: 1.5rem;
-}
-
-button {
-  grid-column: 1 / 3;
-  margin: 0 40%;
-  font-size: 1.5rem;
-  border-radius: 10px;
-}
-
-textarea {
-  grid-column: 1 / 3;
-  overflow: hidden;
-  resize: none;
-  font-size: 1.5rem;
-  height: 8rem
-}
-
-.badge {
-  margin: 10vh 10vw;
-  border: solid 1px black;
-  border-radius: 10px;
-  font-size: 1.5rem;
-
-}
-
-.badge--body{
-    padding: 2% 5%;
+  
+  form {
+    margin: 10vh 10vw;
+    padding: 3%;
+    border: solid 1px black;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 1%;
     overflow: hidden;
+    border-radius: 10px;
+    
+  }
+  
+  /* input {
+    font-size: 1.5rem;
+  } */
+  
+  button {
+    grid-column: 1 / 3;
+    margin: 0 30%;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  
+  textarea {
+    grid-column: 1 / 3;
+    overflow: hidden;
+    resize: none;
+    font-size: 1rem;
+  }
+  
+  .badge {
+    margin: 10vh 10vw;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .badge--body{
+      padding: 2% 5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      overflow: hidden;
+  }
+  
+  .badge--header{
+   padding-left: 10%;
+  }
+  
+  .phone--field {
+    display: inline;
+  }
+  
+  #phone--label{
+    float: left;
+    /* font-size: 1.5rem; */
+    padding: 0 7%;
+  }
+  
+  .badge--about {
+  
+    grid-column: 1 / 3;
+    overflow: hidden;
+    resize: none;
+    font-size: 1.5rem;
+    height: 8rem;
+    border: 1px solid black
+  }
+  
+/* } */
+
+@media (max-width: 875px) {
+  * {
+    margin: 0;
+  }
+  
+  
+  form {
+    margin: 10vh 10vw;
+    padding: 3%;
+    border: solid 1px black;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #phone--label {
+    float: right;
+  }
+  
+  .badge {
+    margin: 10vh 10vw;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-size: 1rem
+  }
+  
+  .badge--body{
+      padding: 2% 5%;
+      overflow: hidden;
+  }
+  
+  .badge--header{
+   padding-left: 10%;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+  }
+  
+  .badge--about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+  }
 }
 
-.badge--header{
- padding-left: 10%;
+@media (max-width: 441px) {
+  #phone{
+    max-width: 40%;
+  }
+
+  #phone--label{
+    text-align: center;
+  }
+
 }
-
-.phone--field {
-  display: inline;
-}
-
-#phone--label{
-  float: left;
-  font-size: 1.5rem;
-  padding: 0 7%;
-}
-
-.badge--about {
-
-  grid-column: 1 / 3;
-  overflow: hidden;
-  resize: none;
-  font-size: 1.5rem;
-  height: 8rem;
-  border: 1px solid black
-}
-

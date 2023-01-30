@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    border: 5px solid grey;
+    background-color: red;
+}
+
+.header {
+    background-color: green;
+    width: 550px;
+    height: 65px;
+}
+
+.main {
+    width: 550px;
+    height: 600px;
+}
