@@ -5,16 +5,139 @@
 
 .app {
     border: 5px solid grey;
-    background-color: red;
+    background-color: white;
 }
 
 .header {
-    background-color: green;
-    width: 550px;
-    height: 65px;
+    width: 34.37rem;
+    height: 4rem;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.main {
-    width: 550px;
-    height: 600px;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1.25rem */
+}
+
+.logo > img {
+    margin-right: 7px;
+}
+
+.logo > h1{
+    float: left;
+    font-size: 1.5rem;
+    text-indent: center;
+    /* padding-right: 10%; */
+}
+
+.header > h3 {
+    font-size: .75rem;
+    /* padding: 25px 36px 25px 0 */
+
+}
+.form {
+    position: relative;
+    width: 34.37rem;
+    /* height: 34.37rem; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-text-stroke: 1px #282828;
+	text-shadow: 0px 4px 4px #282828;
+    padding-bottom: 50px
+}
+
+.form--inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2.1rem 0;
+    padding-bottom: 1rem;
+    -webkit-text-stroke: 0;
+    text-shadow: 0
+}
+
+#input--top {
+    margin-right: 10%;
+
+}
+
+#input--bottom {
+    margin-left: 10%;
+}
+
+.form > button {
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    width: 477px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    -webkit-text-stroke: 0;
+    text-shadow: 0
+}
+
+.meme--container{
+    position: relative;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meme--text{
+    position: absolute;
+    z-index: 2;
+    font-size: 4rem;
+}
+
+#topText {
+    top: 1%
+}
+
+#bottomText{
+    bottom: 1%;
+}
+
+.meme--img {
+    position: relative;
+    z-index: 1;
+    width: 29.81rem;
+    height: 16.75rem;
+}
+
+.memeCard {
+    color: white;
+    margin: 1%;
+    background-color: transparent;
+    font-size: 3rem;
+    /* -webkit-text-stroke: 1px #282828;
+	text-shadow: 0px 4px 4px #282828; */
+}
+
+.memeCard > img {
+    width: 500px;
+    height: 500px;
+    margin: -100px 0;
+}
+
+#card--top {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: white;
+	
+    
+
+}
+
+#card--bottom{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
 }
