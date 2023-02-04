@@ -4,6 +4,7 @@
 }
 
 .app {
+    position: relative;
     border: 5px solid grey;
     background-color: white;
 }
@@ -73,7 +74,7 @@
 
 .form > button {
     background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-    width: 477px;
+    width: 34.37rem;
     height: 40px;
     border-radius: 5px;
     border: 0;
@@ -85,59 +86,98 @@
 .meme--container{
     position: relative;
     margin: 25px;
+    width: auto;
+    background-color: green;
+    z-index: 3;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .meme--text{
-    position: absolute;
-    z-index: 2;
-    font-size: 4rem;
-}
-
-#topText {
-    top: 1%
-}
-
-#bottomText{
-    bottom: 1%;
+    /* position: absolute; */
+    /* z-index: 2; */
+    font-size: 3em;
 }
 
 .meme--img {
     position: relative;
     z-index: 1;
-    width: 29.81rem;
-    height: 16.75rem;
+    width: 20rem;
+    height: 15;
+}
+
+#topText {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    z-index: 2;
+    line-height: 50px;
+    
+}
+
+#bottomText{
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    z-index: 2;
+    line-height: 50px;
 }
 
 .memeCard {
+    position: relative;
     color: white;
     margin: 1%;
     background-color: transparent;
-    font-size: 3rem;
-    /* -webkit-text-stroke: 1px #282828;
-	text-shadow: 0px 4px 4px #282828; */
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.memeCard > img {
+.card--img{
     width: 500px;
     height: 500px;
-    margin: -100px 0;
+    /* margin: -100px 0; */
 }
 
-#card--top {
-    position: relative;
-    top: 50px;
+.card--top {
+    position: absolute;
+    top: 15%;
     text-align: center;
-    color: white;
-	
-    
-
+    line-height: 50px;
 }
 
-#card--bottom{
-    position: relative;
-    bottom: 50px;
+.card--bottom{
+    position: absolute;
+    bottom: 15%;
     text-align: center;
+    line-height: 50px;
 }
+
+.card--delete {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 1.5rem;
+}
+
+.card--edit {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 1.5rem;
+}
+
+.card--inputs{
+    position: absolute;
+    -webkit-text-stroke: 0;
+}
+
+.card--inputs > input {
+    margin: 10px;
+}
+
+
+

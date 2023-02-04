@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import getNew from '../getNew.png'
 import MemeCard from './MemeCard'
+import { v4 } from "uuid";
 
 export default function App() {
 
@@ -10,7 +11,8 @@ export default function App() {
     {
       topText: '',
       bottomText: '',
-      randomImg: 'https://i.imgflip.com/2bqzyl.jpg'
+      randomImg: 'https://i.imgflip.com/2bqzyl.jpg',
+      id: v4()
     }
   )
   
@@ -35,6 +37,12 @@ export default function App() {
   }
 
   function add() {
+    setMemeData(prevState => {
+      return {
+        ...prevState,
+        id: v4()
+      }
+    })
     setMemeList(prevList => {
       return [
         ...prevList,
@@ -43,13 +51,9 @@ export default function App() {
     })
   }
 
-  console.log(memeList)
-
   function getMemeImg() {
     const random = Math.floor(Math.random() * allMemes.length)
-    console.log(random)
     const url = allMemes[random].url
-    console.log(url)
     setMemeData(prevState => {
       return {
         ...prevState,
@@ -58,12 +62,15 @@ export default function App() {
     })
   }
 
+
   const card = memeList.map(meme => {
     return < MemeCard 
               className='memeCard'
               topText={meme.topText}
               bottomText={meme.bottomText}
               url={meme.randomImg}
+              key={meme.id}
+              id={meme.id}
             />
   })
 
@@ -95,8 +102,8 @@ export default function App() {
           <img src={getNew} />
         </button>
         <div className="meme--container">
-          <h1 className="meme--text" id="topText">{memeData.topText}</h1>
           <img className="meme--img" src={memeData.randomImg} />
+          <h1 className="meme--text" id="topText">{memeData.topText}</h1>
           <h1 className="meme--text" id="bottomText">{memeData.bottomText}</h1>
         </div>
         <button
