@@ -7,7 +7,7 @@ export default function Header(props) {
     return (
         <div className="header">
             <div className="logo">
-                <img src={faceTroll} style={{width: '31px', height: '26px'}}/>
+                <img src={faceTroll} style={{width: '10%', height: '10%'}}/>
                 <h1 className='header--left'>Meme Generator</h1>
             </div>
             <h3>React Course - Project 3</h3>

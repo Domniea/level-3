@@ -35,8 +35,8 @@ export default function MemeCard(props) {
             {showMeme && 
                 <Fragment>
                     <img className="card--img" src={props.url} />
-                    <h1 className="card--top">{cardData.topText}</h1>
-                    <h1 className="card--bottom">{cardData.bottomText}</h1>
+                    <h1 className="card--top meme--text">{cardData.topText}</h1>
+                    <h1 className="card--bottom meme--text">{cardData.bottomText}</h1>
                     <button
                         className="card--delete"
                         onClick={handleDelete}
@@ -47,7 +47,7 @@ export default function MemeCard(props) {
                         className="card--edit"
                         onClick={handleEdit}
                     >
-                        Edit
+                       {!edit ? 'Edit' : 'Save'}
                     </button>
                     {
                         edit &&

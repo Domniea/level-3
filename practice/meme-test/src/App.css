@@ -3,181 +3,513 @@
     box-sizing: border-box;
 }
 
-.app {
-    position: relative;
-    border: 5px solid grey;
-    background-color: white;
-}
-
-.header {
-    width: 34.37rem;
-    height: 4rem;
-    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 1.25rem */
-}
-
-.logo > img {
-    margin-right: 7px;
-}
-
-.logo > h1{
-    float: left;
-    font-size: 1.5rem;
-    text-indent: center;
-    /* padding-right: 10%; */
-}
-
-.header > h3 {
-    font-size: .75rem;
-    /* padding: 25px 36px 25px 0 */
-
-}
-.form {
-    position: relative;
-    width: 34.37rem;
-    /* height: 34.37rem; */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    -webkit-text-stroke: 1px #282828;
-	text-shadow: 0px 4px 4px #282828;
-    padding-bottom: 50px
-}
-
-.form--inputs {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 2.1rem 0;
-    padding-bottom: 1rem;
-    -webkit-text-stroke: 0;
-    text-shadow: 0
-}
-
-#input--top {
-    margin-right: 10%;
-
-}
-
-#input--bottom {
-    margin-left: 10%;
-}
-
-.form > button {
-    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-    width: 34.37rem;
-    height: 40px;
-    border-radius: 5px;
-    border: 0;
-    color: white;
-    -webkit-text-stroke: 0;
-    text-shadow: 0
-}
-
-.meme--container{
-    position: relative;
-    margin: 25px;
-    width: auto;
-    background-color: green;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.meme--text{
-    /* position: absolute; */
-    /* z-index: 2; */
-    font-size: 3em;
-}
-
-.meme--img {
-    position: relative;
-    z-index: 1;
-    width: 20rem;
-    height: 15;
-}
-
-#topText {
-    position: absolute;
-    top: 10%;
-    text-align: center;
-    z-index: 2;
-    line-height: 50px;
+@media screen and (min-width: 1427px ) {
+    .app {
+        position: relative;
+        border: 5px solid grey;
+        background-color: white;
+        width: 60vw
+    }
     
+    .header {
+        width: 100%;
+        height: 4rem;
+        background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .logo > img {
+        margin-right: 7px;
+    }
+    
+    .logo > h1{
+        float: left;
+        font-size: 1.5rem;
+        text-indent: center;
+
+    }
+    
+    .header > h3 {
+        font-size: .75rem;
+
+    }
+
+    .form {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        -webkit-text-stroke: 1px #282828;
+        text-shadow: 0px 4px 4px #282828;
+        padding-bottom: 50px
+    }
+    
+    .form--inputs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 1rem;
+        -webkit-text-stroke: 0;
+        text-shadow: 0
+    }
+    
+    .form--inputs > input {
+        font-size: 2rem;
+        margin: 1rem 4rem;
+        text-align: center;
+    }
+    
+    .form > button {
+        background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+        width: 75%;
+        height: 4rem;
+        border-radius: 5px;
+        border: 0;
+        color: white;
+        -webkit-text-stroke: 0;
+        text-shadow: 0;
+    }
+    
+    .meme--container{
+        position: relative;
+        margin: 25px;
+        width: auto;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .meme--text{
+        font-size: 3em;
+    }
+    
+    .meme--img {
+        position: relative;
+        z-index: 1;
+        width: 75%;
+        height: 75%;
+        max-height: 60vh;
+    }
+    
+    #topText {
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        z-index: 2;
+        line-height: 50px;
+    }
+    
+    #bottomText{
+        position: absolute;
+        bottom: 10%;
+        text-align: center;
+        z-index: 2;
+        line-height: 50px;
+    }
+    
+    .memeCard {
+        position: relative;
+        color: white;
+        margin: 1%;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .card--img{
+        width: 80%;
+    }
+    
+    .card--top {
+        position: absolute;
+        top: 15%;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .card--bottom{
+        position: absolute;
+        bottom: 15%;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .card--delete {
+        position: absolute;
+        bottom: 5%;
+        left: 20%;
+        font-size: 1.5rem;
+    }
+    
+    .card--edit {
+        position: absolute;
+        bottom: 5%;
+        right: 20%;
+        font-size: 1.5rem;
+    }
+    
+    .card--inputs{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        -webkit-text-stroke: 0;
+    }
+    
+    .card--inputs > input {
+        margin: 10px;
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
 
-#bottomText{
-    position: absolute;
-    bottom: 10%;
-    text-align: center;
-    z-index: 2;
-    line-height: 50px;
+@media(min-width: 586px)and (max-width: 1427px) {
+    .app {
+        position: relative;
+        border: 5px solid grey;
+        background-color: white;
+        width: 550px;
+    }
+
+    .header {
+        width: auto;
+        height: 4rem;
+        background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo > img {
+        margin-right: 7px;
+    }
+
+    .logo > h1{
+        float: left;
+        font-size: 1.5rem;
+        text-indent: center;
+    }
+
+    .header > h3 {
+        font-size: .75rem;
+        margin: 3%;
+        text-align: center;
+    } 
+
+    .form {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        -webkit-text-stroke: 1px #282828;
+        text-shadow: 0px 4px 4px #282828;
+        padding-bottom: 50px
+    }
+
+    .form--inputs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2.1rem 0;
+        padding-bottom: 1rem;
+        -webkit-text-stroke: 0;
+        text-shadow: 0
+    }
+
+    .form--inputs > input {
+        margin: 5% 10%;
+    }
+
+    .form > button {
+        background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        border: 0;
+        color: white;
+        -webkit-text-stroke: 0;
+        text-shadow: 0;
+    }
+
+    .meme--container{
+        position: relative;
+        margin: 25px;
+        width: auto;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .meme--text{
+        font-size: 3em;
+    }
+
+    .meme--img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    #topText {
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        z-index: 2;
+        line-height: 50px;
+        
+    }
+
+    #bottomText{
+        position: absolute;
+        bottom: 10%;
+        text-align: center;
+        z-index: 2;
+        line-height: 50px;
+    } 
+
+    .memeCard {
+        position: relative;
+        color: white;
+        margin: 1%;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card--img{
+        width: 30rem;
+    }
+
+    .card--top {
+        position: absolute;
+        top: 15%;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .card--bottom{
+        position: absolute;
+        bottom: 15%;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .card--delete {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .card--edit {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        font-size: 1.5rem;
+    }
+
+    .card--inputs{
+        position: absolute;
+        -webkit-text-stroke: 0;
+    }
+
+    .card--inputs > input {
+        margin: 10px;
+    }
 }
 
-.memeCard {
-    position: relative;
-    color: white;
-    margin: 1%;
-    background-color: transparent;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@media (max-width: 585px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .app {
+        border: 5px solid grey;
+        background-color: white;
+ 
+    }
+    
+    .header {
+        width: auto;
+        height: 4rem;
+        background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo > img {
+        margin-right: 7px;
+    }
+
+    .logo > h1{
+        float: left;
+        font-size: 6vw;
+        text-indent: center;
+    }
+
+    .header > h3 {
+        text-align: center;
+        font-size: 3vw;
+        margin: 3%;
+    } 
+
+    .form {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        -webkit-text-stroke: 0;
+        text-shadow: 0;
+        padding-bottom: 50px
+    }
+
+    .form--inputs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* padding: 5vh 0; */
+        /* padding-bottom: 1rem; */
+        -webkit-text-stroke: 0;
+        text-shadow: 0
+    }
+
+    .form--inputs > input {
+        margin: 4vh 5vw;
+        height: 4vh;
+        width: 30vw;
+    }
+
+    .form > button {
+        background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+        width: 60vw;
+        height: 5vh;
+        border-radius: 5px;
+        border: 0;
+        color: white;
+        -webkit-text-stroke: 0;
+        text-shadow: 0;
+    }
+
+    .meme--container{
+        position: relative;
+        margin: 25px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .meme--text{
+        font-size: 3em;
+    }
+
+    .meme--img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    #topText {
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        z-index: 2;
+        line-height: 5vh;
+        
+    }
+
+    #bottomText{
+        position: absolute;
+        bottom: 10%;
+        text-align: center;
+        z-index: 2;
+        line-height: 5vh;
+    } 
+
+    .memeCard {
+        position: relative;
+        margin: 1%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card--img{
+        position: relative;
+        width: 100%;
+    }
+
+    .card--top {
+        position: absolute;
+        top: 10%;
+        line-height: 5vh;
+        /* font-size: 5em; */
+    }
+
+    .card--bottom{
+        position: absolute;
+        bottom: 10%;
+        line-height: 5vh;
+        /* font-size: 5em; */
+    }
+
+    .card--delete {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        font-size: 3vw;
+    }
+
+    .card--edit {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        font-size: 3vw;
+    }
+
+    .card--inputs{
+        position: absolute;
+        -webkit-text-stroke: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .card--inputs > input {
+        margin: 1%;
+        font-size: 1em;
+    }
 }
-
-.card--img{
-    width: 500px;
-    height: 500px;
-    /* margin: -100px 0; */
-}
-
-.card--top {
-    position: absolute;
-    top: 15%;
-    text-align: center;
-    line-height: 50px;
-}
-
-.card--bottom{
-    position: absolute;
-    bottom: 15%;
-    text-align: center;
-    line-height: 50px;
-}
-
-.card--delete {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    font-size: 1.5rem;
-}
-
-.card--edit {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    font-size: 1.5rem;
-}
-
-.card--inputs{
-    position: absolute;
-    -webkit-text-stroke: 0;
-}
-
-.card--inputs > input {
-    margin: 10px;
-}
-
-
-
