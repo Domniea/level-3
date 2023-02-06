@@ -12,6 +12,8 @@ export default function App() {
       topText: '',
       bottomText: '',
       randomImg: 'https://i.imgflip.com/2bqzyl.jpg',
+      color: '#123456',
+      size: 2,
       id: v4()
     }
   )
@@ -34,6 +36,7 @@ export default function App() {
         [name]: value
       }
     })
+    console.log(memeData)
   }
 
   function add() {
@@ -68,6 +71,8 @@ export default function App() {
               className='memeCard'
               topText={meme.topText}
               bottomText={meme.bottomText}
+              color={meme.color}
+              size={meme.size}
               url={meme.randomImg}
               key={meme.id}
               id={meme.id}
@@ -76,9 +81,11 @@ export default function App() {
 
   return (
     <div className="main">
-
+      <div className='labelBox'>
+        <label htmlFor='input--top' id='label--top'>Top Text</label>
+        <label htmlFor='input--bottom' id='label--bottom'>Bottom Text</label>
+      </div>
       <div className="form">
-
         <div className="form--inputs">
           <input 
             type='text'
@@ -96,6 +103,24 @@ export default function App() {
             className='form--input'
             id="input--bottom"
           />
+          <input 
+            type='color'
+            name='color'
+            value={memeData.color}
+            onChange={handleChange}
+            className='form--color'
+            id="input--color"
+          />
+          <input 
+            type="range"
+            name='size'
+            value={memeData.size}
+            onChange={handleChange}
+            className='form--size'
+            id="input--size"
+            min={1}
+            max={10}
+          />
         </div>
 
         <button onClick={getMemeImg}>
@@ -103,8 +128,15 @@ export default function App() {
         </button>
         <div className="meme--container">
           <img className="meme--img" src={memeData.randomImg} />
-          <h1 className="meme--text" id="topText">{memeData.topText}</h1>
-          <h1 className="meme--text" id="bottomText">{memeData.bottomText}</h1>
+          <h1 
+            className="meme--text" 
+            id="topText"
+            style={{color: memeData.color, fontSize: `${memeData.size}rem`}}
+          >{memeData.topText}</h1>
+          <h1 className="meme--text" 
+            id="bottomText"
+            style={{color: memeData.color, fontSize: `${memeData.size}rem`}}
+          >{memeData.bottomText}</h1>
         </div>
         <button
           className="button-add"

@@ -9,6 +9,11 @@ export default function MemeCard(props) {
         {
             topText: props.topText,
             bottomText: props.bottomText,
+            randomImg: props.randomImg,
+            color: props.color,
+            size: props.size,
+            id: props.id
+            
         }
     )
     
@@ -35,8 +40,20 @@ export default function MemeCard(props) {
             {showMeme && 
                 <Fragment>
                     <img className="card--img" src={props.url} />
-                    <h1 className="card--top meme--text">{cardData.topText}</h1>
-                    <h1 className="card--bottom meme--text">{cardData.bottomText}</h1>
+                    <h1 
+                        className="card--top meme--text"
+                        style={{color: cardData.color, fontSize:`${cardData.size}rem`}}
+                        onChange={handleChange}
+                    >{
+                    cardData.topText}
+                    </h1>
+                    <h1 
+                        className="card--bottom mreme--text"
+                        style={{color: cardData.color, fontSize:`${cardData.size}rem`}}
+                        onChange={handleChange}
+                    >
+                        {cardData.bottomText}
+                    </h1>
                     <button
                         className="card--delete"
                         onClick={handleDelete}
@@ -65,7 +82,25 @@ export default function MemeCard(props) {
                                          name='bottomText'
                                          value={cardData.bottomText}
                                          onChange={handleChange}
-                                    /> 
+                                    />
+                                        <input 
+                                            type='color'
+                                            name='color'
+                                            value={cardData.color}
+                                            onChange={handleChange}
+                                            // className='form--color'
+                                            // id="input--color"
+                                        />
+                                <input 
+                                    type="range"
+                                    name='size'
+                                    value={cardData.size}
+                                    onChange={handleChange}
+                                    className='form--size'
+                                    id="input--size"
+                                    min={1}
+                                    max={10}
+                                />
                                 </div>
                             </Fragment>
                     }

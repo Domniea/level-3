@@ -8,11 +8,11 @@
         position: relative;
         border: 5px solid grey;
         background-color: white;
-        width: 60vw
+        width: 80vw
     }
     
     .header {
-        width: 100%;
+        width: auto;
         height: 4rem;
         background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
         display: flex;
@@ -43,15 +43,30 @@
 
     }
 
+    /* .labelBox {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        color: black;
+        margin-bottom: -2vh;
+        margin-top: 2vh;
+        
+    }
+
+    label {
+        font-size: 2em;
+    } */
+
+    
+
     .form {
         position: relative;
-        width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
-        -webkit-text-stroke: 1px #282828;
-        text-shadow: 0px 4px 4px #282828;
-        padding-bottom: 50px
+        -webkit-text-stroke: 0;
+        text-shadow: 0;
+        padding-bottom: 5vh
     }
     
     .form--inputs {
@@ -65,14 +80,14 @@
     
     .form--inputs > input {
         font-size: 2rem;
-        margin: 1rem 4rem;
+        margin: 1rem 1rem;
         text-align: center;
     }
     
     .form > button {
         background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
         width: 75%;
-        height: 4rem;
+        height: 5vh;
         border-radius: 5px;
         border: 0;
         color: white;
@@ -82,7 +97,7 @@
     
     .meme--container{
         position: relative;
-        margin: 25px;
+        margin: 4%;
         width: auto;
         z-index: 3;
         display: flex;
@@ -91,60 +106,56 @@
     }
     
     .meme--text{
-        font-size: 3em;
+        -webkit-text-stroke: 1px #282828;
+        text-shadow: 0px 4px 4px #282828;
+
     }
     
     .meme--img {
         position: relative;
         z-index: 1;
-        width: 75%;
-        height: 75%;
-        max-height: 60vh;
+        width: 100%;
+        max-width: 80vw;
     }
     
     #topText {
         position: absolute;
         top: 10%;
-        text-align: center;
         z-index: 2;
-        line-height: 50px;
+        line-height: 5vh;
     }
     
     #bottomText{
         position: absolute;
         bottom: 10%;
-        text-align: center;
         z-index: 2;
-        line-height: 50px;
+        line-height: 5vh;
     }
     
     .memeCard {
         position: relative;
         color: white;
-        margin: 1%;
+        margin: .5% 4%;
         font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        width: auto;
     }
     
     .card--img{
-        width: 80%;
+        position: relative;
+        width: 100%;
     }
     
     .card--top {
         position: absolute;
         top: 15%;
-        text-align: center;
         line-height: 50px;
     }
     
     .card--bottom{
         position: absolute;
         bottom: 15%;
-        text-align: center;
         line-height: 50px;
     }
     
@@ -177,11 +188,17 @@
 }
 
 @media(min-width: 586px)and (max-width: 1427px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .app {
-        position: relative;
+
         border: 5px solid grey;
         background-color: white;
-        width: 550px;
+        width: 80vw;
     }
 
     .header {
@@ -220,29 +237,29 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        -webkit-text-stroke: 1px #282828;
-        text-shadow: 0px 4px 4px #282828;
-        padding-bottom: 50px
+        -webkit-text-stroke:0;
+        text-shadow: 0;
+        padding-bottom: 5vh
     }
 
     .form--inputs {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding: 2.1rem 0;
-        padding-bottom: 1rem;
         -webkit-text-stroke: 0;
         text-shadow: 0
     }
 
     .form--inputs > input {
-        margin: 5% 10%;
+        margin: 1rem 1rem;
+        text-align: center;
+        width: 15vw;
     }
 
     .form > button {
         background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-        width: 300px;
-        height: 40px;
+        width: 75%;
+        height: 5vh;
         border-radius: 5px;
         border: 0;
         color: white;
@@ -252,7 +269,7 @@
 
     .meme--container{
         position: relative;
-        margin: 25px;
+        margin: 4%;
         width: auto;
         z-index: 3;
         display: flex;
@@ -262,7 +279,8 @@
     }
 
     .meme--text{
-        font-size: 3em;
+        -webkit-text-stroke: 1px #282828;
+        text-shadow: 0px 4px 4px #282828;
     }
 
     .meme--img {
@@ -274,39 +292,36 @@
     #topText {
         position: absolute;
         top: 10%;
-        text-align: center;
         z-index: 2;
-        line-height: 50px;
+        line-height: 5vh;
         
     }
 
     #bottomText{
         position: absolute;
         bottom: 10%;
-        text-align: center;
         z-index: 2;
-        line-height: 50px;
+        line-height: 5vh;
     } 
 
     .memeCard {
         position: relative;
-        color: white;
-        margin: 1%;
+        margin: .5% 4%;
+        width: auto;
         font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
     }
 
     .card--img{
-        width: 30rem;
+        position: relative;
+        width: 100%;
     }
 
     .card--top {
         position: absolute;
         top: 15%;
-        text-align: center;
         line-height: 50px;
     }
 
@@ -314,7 +329,7 @@
         position: absolute;
         bottom: 15%;
         text-align: center;
-        line-height: 50px;
+        line-height: 5vh;
     }
 
     .card--delete {
@@ -350,7 +365,7 @@
     .app {
         border: 5px solid grey;
         background-color: white;
- 
+        width: 100vw;
     }
     
     .header {
@@ -391,23 +406,21 @@
         flex-direction: column;
         -webkit-text-stroke: 0;
         text-shadow: 0;
-        padding-bottom: 50px
+        padding-bottom: 5vh
     }
 
     .form--inputs {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        /* padding: 5vh 0; */
-        /* padding-bottom: 1rem; */
         -webkit-text-stroke: 0;
         text-shadow: 0
     }
 
     .form--inputs > input {
-        margin: 4vh 5vw;
-        height: 4vh;
-        width: 30vw;
+        margin: 1rem 1rem;
+        text-align: center;
+        width: 75%;
     }
 
     .form > button {
@@ -423,15 +436,18 @@
 
     .meme--container{
         position: relative;
-        margin: 25px;
+        margin: 4%;
         width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     .meme--text{
         font-size: 3em;
+        -webkit-text-stroke: 1px #282828;
+        text-shadow: 0px 4px 4px #282828;
     }
 
     .meme--img {
@@ -459,7 +475,7 @@
 
     .memeCard {
         position: relative;
-        margin: 1%;
+        margin: 4%;
         width: auto;
         display: flex;
         justify-content: center;
@@ -506,10 +522,12 @@
         justify-content: space-around;
         align-items: center;
         
+        
     }
 
     .card--inputs > input {
-        margin: 1%;
-        font-size: 1em;
+        margin: 1rem 1rem;
+        text-align: center;
+        width: 75%;
     }
 }
