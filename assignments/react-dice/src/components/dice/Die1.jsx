@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import d0 from './images/d0.png'
 import d1 from './images/d1.png'
 import d2 from './images/d2.png'
@@ -10,6 +11,8 @@ import d6 from './images/d6.png'
 
 export default function Die1(props) {
     let dImage
+
+    const [held, setHeld] = useState(false)
 
     props.number === 0 ? dImage = d0 : ''
     props.number === 1 ? dImage = d1 : ''
@@ -23,6 +26,7 @@ export default function Die1(props) {
                 <img src={dImage} />
             {/* <h3>{props.number}</h3>
             <h6>{props.isHeld ? 'HELD' : ''}</h6> */}
+            {held && <h3 className='held'>Held</h3>}
         </div>
     )
 }

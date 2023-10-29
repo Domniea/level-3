@@ -21,15 +21,16 @@
 }
 
 .die {
-  width: 100px;
-  height: 100px;
+  width: 20%;
+  height: 20%;
   border: 1px solid black;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  margin: 20px;
+  margin: 2vh 2vw;
   cursor: pointer;
   background-color: white;
 }
@@ -39,6 +40,10 @@
   justify-content: center;
   align-content: center;
   margin: 1em
+}
+
+.counter {
+  text-align: center;
 }
 
 img {
